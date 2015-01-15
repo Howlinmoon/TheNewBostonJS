@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body onUnLoad="comeBack();">
+
+<script type="text/javascript">
+
+	// Tutorial #23 - Event Handlers : onMouseOver, onLoad, onUnLoad
+	
+	function itLoaded() {
+		document.write("Hey - I was called from the onload handler! <br />");
+	}
+	
+	function something() {
+		document.write("Hey - you followed directions! <br />");
+	}
+	
+	function comeBack() {
+		// document.write("Hey - come back here! <br />");
+		alert("HEY - YOU GET BACK HERE RIGHT NOW!");
+	}
+	
+</script>
+
+<a href="http://www.google.com" onMouseOut="comeBack();">CLICK HERE IF YOU DARE! (HOVER)</a>
+
+Some Basic Text Here
+
+<a href="http://www.google.com" onMouseOut="comeBack();">CLICK HERE IF YOU DARE! (HOVER)</a>
+
+</body>
+</html>
