@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+<script>
+	function person (name, age) {
+		this.name = name;
+		this.age = age;
+		this.yearsUntilRetire = yearsLeft;
+	}
+
+	var donaldDuck = new person("donald duck", 80);
+	function yearsLeft() {
+		var numYears = 65 - this.age;
+		return numYears;
+	}	
+	</script>
+
+</head>
+
+<body onUnLoad="comeBack();">
+
+<script type="text/javascript">
+
+	// Tutorial #27 - Objects - Adding methods to objects
+	
+	document.write("Donald Duck name: "+donaldDuck.name+"<br />");
+	document.write("Donald Duck age: "+donaldDuck.age+"<br />");
+	document.write("Donald Duck can retire in "+donaldDuck.yearsUntilRetire()+" years");
+	
+</script>
+
+</body>
+</html>
