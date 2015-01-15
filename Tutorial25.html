@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+<script>
+	function person (name, age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	var donaldDuck = new person("donald duck", 80);
+	
+	</script>
+
+</head>
+
+<body onUnLoad="comeBack();">
+
+<script type="text/javascript">
+
+	// Tutorial #25 - Objects - Creation and Access thereof
+	
+	var tuna = "Hey, I am a tuna fish!";
+	var tunaLength = tuna.length;
+	document.write("The length of the tuna var is "+tunaLength+"<br />");
+	document.write("Donald Duck name: "+donaldDuck.name+"<br />");
+	document.write("Donald Duck age: "+donaldDuck.age+"<br />");
+	
+</script>
+
+</body>
+</html>
