@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	// Tutorial #33 Array, adding elements via a loop
+	
+	
+	var userInput = "";
+	document.write("You just entered: "+userInput+"<br />");
+	
+	
+	var stuff = new Array(3);
+
+	for (x = 0; x< 3; x++) {
+		stuff[x] = prompt("Enter item "+(x+1)+" of 3 here: ", "");
+		document.write("Element number: "+x+" is: "+stuff[x]+"<br />");
+	}
+
+	document.write("<br />DISPLAYING THE CONTENTS OF THE ARRAY<br /><br />");
+	arrayLength = stuff.length;
+	document.write("The length of the array is: "+arrayLength+"<br />");
+	for (x = 0; x< arrayLength; x++) {
+		document.write("Element number: "+x+" is: "+stuff[x]+"<br />");
+	}
+
+	
+	
+</script>
+
+</body>
+</html>
