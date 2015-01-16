@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	// Tutorial #37 - Date object methods, and setInterval()
+	
+	document.write("Above the doSomething function <br />");
+	var counter = 0;
+	var intervalId = 0;
+	allClear = false;
+	
+	function doSomething() {
+		counter++;
+		document.write("doSomething counter is now: "+counter+"<br />");
+		if (counter == 10) {
+			document.write("We have hit 10, attempting to stop the madness");
+			clearInterval(intervalId);
+			allClear = true;
+		}
+	}
+	
+	function printTime() {
+		var now = new Date();
+		var hours = now.getHours();
+		var minutes = now.getMinutes();
+		var seconds = now.getSeconds();
+		document.write("The time is now: "+hours+":"+minutes+":"+seconds+"<br />");
+	}
+	
+
+	document.write("Calling doSomething function once manually<br />");
+	doSomething();
+	
+	// Unlike in the tutorial, quotes around the function name were not working.
+	
+	intervalId = setInterval(printTime, 1000);
+	
+	// while (! allClear) {
+	// 	document.write("NOW we can continue! <br />");
+	// }
+	
+</script>
+
+</body>
+</html>
