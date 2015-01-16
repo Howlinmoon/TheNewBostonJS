@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<form>
+	Username: <input type = "text" />
+	Password: <input type = "password" />
+	<input type="submit" value = "Submit!" />
+</form>
+
+<script type="text/javascript">
+
+	// Tutorial #38 - Accessing Forms
+	
+	var formLength = document.forms[0].length;
+	document.write("length of the form: "+formLength+" <br />");
+	for (x = 0; x<formLength; x++) {
+		document.write("element "+x+" of the form: "+document.forms[0][x]+"<br />");
+	}
+</script>
+
+</body>
+</html>
