@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	// Tutorial #31 - join and pop
+	
+	var movies = new Array("Star Wars", "Five Million Years to Earth", "Godzilla", "King Kong");
+	var string1 = movies.join("=+=");
+
+	document.write("movies array converted to a string is "+string1+"<br />");
+	document.write("movies[3] = "+movies[3]+"<br />");
+	var string2 = movies.pop();
+	// string2 now contains the element that was popped out of the array.
+	// attempting to access the missing element gives an error
+	document.write("movies[3] = "+movies[3]+"<br />");
+	document.write("string2 = "+string2+"<br />");
+</script>
+
+</body>
+</html>
