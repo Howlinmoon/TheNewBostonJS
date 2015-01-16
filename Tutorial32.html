@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11-transistional.dtd">
+
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	// Tutorial #32 - reverse, push, sort
+	
+	var movies = new Array("Star Wars", "Five Million Years to Earth", "Godzilla", "King Kong");
+	var arrayLength = movies.length;
+
+	document.write("The length of the array is: "+arrayLength+"<br />");
+	for (x = 0; x< arrayLength; x++) {
+		document.write("Element number: "+x+" is: "+movies[x]+"<br />");
+	}
+
+	document.write("<br />REVERSING THE ORDER OF THE ARRAY<br /><br />");
+	// reverse the order of the array
+	movies.reverse();
+	arrayLength = movies.length;
+	document.write("The length of the array is: "+arrayLength+"<br />");
+	for (x = 0; x< arrayLength; x++) {
+		document.write("Element number: "+x+" is: "+movies[x]+"<br />");
+	}
+
+	document.write("<br />ADDING TWO ELMENTS TO  THE ARRAY<br /><br />");
+
+	movies.push("Avatar", "The Mummy");
+	
+	arrayLength = movies.length;
+	document.write("The length of the array is: "+arrayLength+"<br />");
+	for (x = 0; x< arrayLength; x++) {
+		document.write("Element number: "+x+" is: "+movies[x]+"<br />");
+	}
+	
+	document.write("<br />SORTING THE ARRAY<br /><br />");
+	movies.sort();
+	
+	arrayLength = movies.length;
+	document.write("The length of the array is: "+arrayLength+"<br />");
+	for (x = 0; x< arrayLength; x++) {
+		document.write("Element number: "+x+" is: "+movies[x]+"<br />");
+	}
+	
+	
+</script>
+
+</body>
+</html>
